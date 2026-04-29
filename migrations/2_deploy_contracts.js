@@ -8,7 +8,7 @@ const Rectangle = artifacts.require("Rectangle");
 const Payment = artifacts.require("Payment");
 
 module.exports = async function (deployer, network, accounts) {
-  // Ex 1 : Somme - avec deux valeurs initiales (10 et 20)
+  // Ex 1 : Somme avec deux valeurs initiales
   await deployer.deploy(Somme, 10, 20);
 
   // Ex 2 : Conversion
