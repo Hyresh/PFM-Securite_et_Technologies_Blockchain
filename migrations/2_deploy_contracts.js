@@ -26,9 +26,9 @@ module.exports = async function (deployer, network, accounts) {
   // Ex 6 : Tableaux
   await deployer.deploy(Tableaux);
 
-  // Ex 7 : Rectangle (hérite de Forme) - coordonnées (0,0), longueur 10, largeur 5
+  // Ex 7 : Rectangle (hérite de Forme)
   await deployer.deploy(Rectangle, 0, 0, 10, 5);
 
-  // Ex 8 : Payment - le destinataire est le premier compte Ganache
+  // Ex 8 : Payment
   await deployer.deploy(Payment, accounts[0]);
 };
