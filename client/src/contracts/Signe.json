@@ -1,0 +1,591 @@
+{
+  "contractName": "Signe",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "nombre",
+          "type": "int256"
+        }
+      ],
+      "name": "estPositif",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function",
+      "constant": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"nombre\",\"type\":\"int256\"}],\"name\":\"estPositif\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"estPositif(int256)\":{\"params\":{\"nombre\":\"Le nombre \\u00e0 v\\u00e9rifier\"},\"returns\":{\"_0\":\"true si le nombre est positif (>= 0), false sinon\"}}},\"title\":\"Signe - Exercice 4\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"estPositif(int256)\":{\"notice\":\"V\\u00e9rifie si un nombre est positif\"}},\"notice\":\"Contrat pour v\\u00e9rifier le signe d'un nombre\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Signe.sol\":\"Signe\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Signe.sol\":{\"keccak256\":\"0x6fb485ec2f8de0eaa497ee1603b7e93bd0f1d002c6b0f38309f097db51194ed7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bddbbba16d6691b3bca3df8385f7227bdf963f0818715757cf656c73d1bc8f9b\",\"dweb:/ipfs/QmPjimbea2SCKYyd8gYmFBNcYtUU6G1hJgvKnumZC8xVfg\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060a18061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063fa046abd14602d575b600080fd5b603f60383660046053565b6000131590565b604051901515815260200160405180910390f35b600060208284031215606457600080fd5b503591905056fea264697066735822122036e0a1302173056fbd3652bd00e5b18ac8e069813e09e9d90ff7c8d7c1c6c5ac64736f6c63430008150033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063fa046abd14602d575b600080fd5b603f60383660046053565b6000131590565b604051901515815260200160405180910390f35b600060208284031215606457600080fd5b503591905056fea264697066735822122036e0a1302173056fbd3652bd00e5b18ac8e069813e09e9d90ff7c8d7c1c6c5ac64736f6c63430008150033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [
+    {
+      "ast": {
+        "nativeSrc": "0:387:10",
+        "nodeType": "YulBlock",
+        "src": "0:387:10",
+        "statements": [
+          {
+            "nativeSrc": "6:3:10",
+            "nodeType": "YulBlock",
+            "src": "6:3:10",
+            "statements": []
+          },
+          {
+            "body": {
+              "nativeSrc": "83:110:10",
+              "nodeType": "YulBlock",
+              "src": "83:110:10",
+              "statements": [
+                {
+                  "body": {
+                    "nativeSrc": "129:16:10",
+                    "nodeType": "YulBlock",
+                    "src": "129:16:10",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nativeSrc": "138:1:10",
+                              "nodeType": "YulLiteral",
+                              "src": "138:1:10",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "kind": "number",
+                              "nativeSrc": "141:1:10",
+                              "nodeType": "YulLiteral",
+                              "src": "141:1:10",
+                              "type": "",
+                              "value": "0"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "revert",
+                            "nativeSrc": "131:6:10",
+                            "nodeType": "YulIdentifier",
+                            "src": "131:6:10"
+                          },
+                          "nativeSrc": "131:12:10",
+                          "nodeType": "YulFunctionCall",
+                          "src": "131:12:10"
+                        },
+                        "nativeSrc": "131:12:10",
+                        "nodeType": "YulExpressionStatement",
+                        "src": "131:12:10"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "name": "dataEnd",
+                            "nativeSrc": "104:7:10",
+                            "nodeType": "YulIdentifier",
+                            "src": "104:7:10"
+                          },
+                          {
+                            "name": "headStart",
+                            "nativeSrc": "113:9:10",
+                            "nodeType": "YulIdentifier",
+                            "src": "113:9:10"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "sub",
+                          "nativeSrc": "100:3:10",
+                          "nodeType": "YulIdentifier",
+                          "src": "100:3:10"
+                        },
+                        "nativeSrc": "100:23:10",
+                        "nodeType": "YulFunctionCall",
+                        "src": "100:23:10"
+                      },
+                      {
+                        "kind": "number",
+                        "nativeSrc": "125:2:10",
+                        "nodeType": "YulLiteral",
+                        "src": "125:2:10",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "slt",
+                      "nativeSrc": "96:3:10",
+                      "nodeType": "YulIdentifier",
+                      "src": "96:3:10"
+                    },
+                    "nativeSrc": "96:32:10",
+                    "nodeType": "YulFunctionCall",
+                    "src": "96:32:10"
+                  },
+                  "nativeSrc": "93:52:10",
+                  "nodeType": "YulIf",
+                  "src": "93:52:10"
+                },
+                {
+                  "nativeSrc": "154:33:10",
+                  "nodeType": "YulAssignment",
+                  "src": "154:33:10",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nativeSrc": "177:9:10",
+                        "nodeType": "YulIdentifier",
+                        "src": "177:9:10"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "calldataload",
+                      "nativeSrc": "164:12:10",
+                      "nodeType": "YulIdentifier",
+                      "src": "164:12:10"
+                    },
+                    "nativeSrc": "164:23:10",
+                    "nodeType": "YulFunctionCall",
+                    "src": "164:23:10"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "value0",
+                      "nativeSrc": "154:6:10",
+                      "nodeType": "YulIdentifier",
+                      "src": "154:6:10"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "abi_decode_tuple_t_int256",
+            "nativeSrc": "14:179:10",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nativeSrc": "49:9:10",
+                "nodeType": "YulTypedName",
+                "src": "49:9:10",
+                "type": ""
+              },
+              {
+                "name": "dataEnd",
+                "nativeSrc": "60:7:10",
+                "nodeType": "YulTypedName",
+                "src": "60:7:10",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "value0",
+                "nativeSrc": "72:6:10",
+                "nodeType": "YulTypedName",
+                "src": "72:6:10",
+                "type": ""
+              }
+            ],
+            "src": "14:179:10"
+          },
+          {
+            "body": {
+              "nativeSrc": "293:92:10",
+              "nodeType": "YulBlock",
+              "src": "293:92:10",
+              "statements": [
+                {
+                  "nativeSrc": "303:26:10",
+                  "nodeType": "YulAssignment",
+                  "src": "303:26:10",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nativeSrc": "315:9:10",
+                        "nodeType": "YulIdentifier",
+                        "src": "315:9:10"
+                      },
+                      {
+                        "kind": "number",
+                        "nativeSrc": "326:2:10",
+                        "nodeType": "YulLiteral",
+                        "src": "326:2:10",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "add",
+                      "nativeSrc": "311:3:10",
+                      "nodeType": "YulIdentifier",
+                      "src": "311:3:10"
+                    },
+                    "nativeSrc": "311:18:10",
+                    "nodeType": "YulFunctionCall",
+                    "src": "311:18:10"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "tail",
+                      "nativeSrc": "303:4:10",
+                      "nodeType": "YulIdentifier",
+                      "src": "303:4:10"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nativeSrc": "345:9:10",
+                        "nodeType": "YulIdentifier",
+                        "src": "345:9:10"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "name": "value0",
+                                "nativeSrc": "370:6:10",
+                                "nodeType": "YulIdentifier",
+                                "src": "370:6:10"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "iszero",
+                              "nativeSrc": "363:6:10",
+                              "nodeType": "YulIdentifier",
+                              "src": "363:6:10"
+                            },
+                            "nativeSrc": "363:14:10",
+                            "nodeType": "YulFunctionCall",
+                            "src": "363:14:10"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "iszero",
+                          "nativeSrc": "356:6:10",
+                          "nodeType": "YulIdentifier",
+                          "src": "356:6:10"
+                        },
+                        "nativeSrc": "356:22:10",
+                        "nodeType": "YulFunctionCall",
+                        "src": "356:22:10"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nativeSrc": "338:6:10",
+                      "nodeType": "YulIdentifier",
+                      "src": "338:6:10"
+                    },
+                    "nativeSrc": "338:41:10",
+                    "nodeType": "YulFunctionCall",
+                    "src": "338:41:10"
+                  },
+                  "nativeSrc": "338:41:10",
+                  "nodeType": "YulExpressionStatement",
+                  "src": "338:41:10"
+                }
+              ]
+            },
+            "name": "abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed",
+            "nativeSrc": "198:187:10",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nativeSrc": "262:9:10",
+                "nodeType": "YulTypedName",
+                "src": "262:9:10",
+                "type": ""
+              },
+              {
+                "name": "value0",
+                "nativeSrc": "273:6:10",
+                "nodeType": "YulTypedName",
+                "src": "273:6:10",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "tail",
+                "nativeSrc": "284:4:10",
+                "nodeType": "YulTypedName",
+                "src": "284:4:10",
+                "type": ""
+              }
+            ],
+            "src": "198:187:10"
+          }
+        ]
+      },
+      "contents": "{\n    { }\n    function abi_decode_tuple_t_int256(headStart, dataEnd) -> value0\n    {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n        value0 := calldataload(headStart)\n    }\n    function abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, iszero(iszero(value0)))\n    }\n}",
+      "id": 10,
+      "language": "Yul",
+      "name": "#utility.yul"
+    }
+  ],
+  "sourceMap": "144:279:7:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "144:279:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;327:94;;;;;;:::i;:::-;380:4;-1:-1:-1;403:11:7;;327:94;;;;363:14:10;;356:22;338:41;;326:2;311:18;327:94:7;;;;;;;14:179:10;72:6;125:2;113:9;104:7;100:23;96:32;93:52;;;141:1;138;131:12;93:52;-1:-1:-1;164:23:10;;14:179;-1:-1:-1;14:179:10:o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.21;\n\n/// @title Signe - Exercice 4\n/// @notice Contrat pour vérifier le signe d'un nombre\ncontract Signe {\n\n    /// @notice Vérifie si un nombre est positif\n    /// @param nombre Le nombre à vérifier\n    /// @return true si le nombre est positif (>= 0), false sinon\n    function estPositif(int nombre) public pure returns (bool) {\n        return nombre >= 0;\n    }\n}\n",
+  "sourcePath": "C:\\Users\\Hamza\\Downloads\\Blockchaine\\contracts\\Signe.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Signe.sol",
+    "exportedSymbols": {
+      "Signe": [
+        407
+      ]
+    },
+    "id": 408,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 392,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:7"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Signe",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 393,
+          "nodeType": "StructuredDocumentation",
+          "src": "58:86:7",
+          "text": "@title Signe - Exercice 4\n @notice Contrat pour vérifier le signe d'un nombre"
+        },
+        "fullyImplemented": true,
+        "id": 407,
+        "linearizedBaseContracts": [
+          407
+        ],
+        "name": "Signe",
+        "nameLocation": "153:5:7",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 405,
+              "nodeType": "Block",
+              "src": "386:35:7",
+              "statements": [
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    },
+                    "id": 403,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 401,
+                      "name": "nombre",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 396,
+                      "src": "403:6:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">=",
+                    "rightExpression": {
+                      "hexValue": "30",
+                      "id": 402,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "413:1:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "403:11:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 400,
+                  "id": 404,
+                  "nodeType": "Return",
+                  "src": "396:18:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 394,
+              "nodeType": "StructuredDocumentation",
+              "src": "166:156:7",
+              "text": "@notice Vérifie si un nombre est positif\n @param nombre Le nombre à vérifier\n @return true si le nombre est positif (>= 0), false sinon"
+            },
+            "functionSelector": "fa046abd",
+            "id": 406,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "estPositif",
+            "nameLocation": "336:10:7",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 397,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 396,
+                  "mutability": "mutable",
+                  "name": "nombre",
+                  "nameLocation": "351:6:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 406,
+                  "src": "347:10:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 395,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "347:3:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "346:12:7"
+            },
+            "returnParameters": {
+              "id": 400,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 399,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 406,
+                  "src": "380:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 398,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "380:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "379:6:7"
+            },
+            "scope": 407,
+            "src": "327:94:7",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 408,
+        "src": "144:279:7",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "32:392:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x89768DB1D29D08278879f45Cad89714C0D8b927a",
+      "transactionHash": "0x381838b7fb8ed40289d51ce6d7be71fac9d56bf7bb537ce3794e8318f67cca65"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2026-04-29T09:42:28.416Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "estPositif(int256)": {
+        "params": {
+          "nombre": "Le nombre à vérifier"
+        },
+        "returns": {
+          "_0": "true si le nombre est positif (>= 0), false sinon"
+        }
+      }
+    },
+    "title": "Signe - Exercice 4",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "estPositif(int256)": {
+        "notice": "Vérifie si un nombre est positif"
+      }
+    },
+    "notice": "Contrat pour vérifier le signe d'un nombre",
+    "version": 1
+  }
+}

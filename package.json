@@ -1,0 +1,13 @@
+{
+  "name": "pfm-blockchain-dapp",
+  "version": "1.0.0",
+  "description": "DApp PFM - Sécurité et Technologies Blockchain",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --network development",
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "truffle": "^5.11.5"
+  }
+}
